@@ -19,7 +19,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
     <aside
       className={`${
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-      } fixed top-0 left-0 z-10 w-[23%] bg-white transition-transform duration-300 ease-in-out px-10 py-5 flex flex-col h-screen overflow-y-auto lg:static lg:translate-x-0 max-lg:w-80`}
+      } fixed top-0 left-0 z-10 w-[23%] bg-white transition-transform duration-300 ease-in-out px-10 py-5 flex flex-col h-screen overflow-y-auto lg:static lg:translate-x-0 max-lg:w-80 no-scroll`}
     >
       <div className="space-y-6 flex-grow">
         <div className="flex items-center justify-between">
