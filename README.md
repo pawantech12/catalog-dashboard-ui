@@ -66,7 +66,6 @@ VITE_APP_GOOGLE_MAP_API=your-google-maps-api-key
   - **assets/**: Contains images and static files.
   - **components/**: Reusable UI components (Sidebar, Navbar,etc.).
   - **pages/**: Contains the main dashboard page .
-  - **services/**: Functions to fetch data from `sampleData.json`.
   - **App.jsx**: The main entry point for the React app.
   - **main.jsx**: The entry point to render the app in the DOM.
 
