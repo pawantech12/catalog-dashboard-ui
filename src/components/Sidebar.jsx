@@ -19,15 +19,16 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
     <aside
       className={`${
         isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-      } fixed top-0 left-0 z-10 w-[23%] bg-white  transition-transform duration-300 ease-in-out px-10 py-5 flex flex-col justify-between lg:static lg:translate-x-0  max-lg:w-80 max-lg:h-full`}
+      } fixed top-0 left-0 z-10 w-[23%] bg-white transition-transform duration-300 ease-in-out px-10 py-5 flex flex-col h-screen overflow-y-auto lg:static lg:translate-x-0 max-lg:w-80`}
     >
-      <div className="space-y-6">
+      <div className="space-y-6 flex-grow">
         <div className="flex items-center justify-between">
           <h1 className="text-3xl font-semibold text-neutral-800">Catalog</h1>
           <button className="bg-none lg:hidden" onClick={toggleSidebar}>
             <IoClose className="w-7 h-7" />
           </button>
         </div>
+
         <div className="mt-8">
           <h4 className="text-lg font-medium uppercase">home</h4>
           <ul className="mt-3">
@@ -39,6 +40,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             </li>
           </ul>
         </div>
+
         <div>
           <h4 className="text-lg font-medium uppercase">App</h4>
           <ul className="mt-3">
@@ -74,6 +76,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
             </li>
           </ul>
         </div>
+
         <div>
           <h4 className="text-lg font-medium uppercase">Page</h4>
           <ul className="mt-3">
@@ -92,6 +95,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
           </ul>
         </div>
       </div>
+
       <div className="bg-button-bg-light p-4 rounded-xl mt-7">
         <div className="flex items-center gap-4">
           <figure>
